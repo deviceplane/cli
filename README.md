@@ -16,12 +16,6 @@ A hosted version of Deviceplane is available at [https://cloud.deviceplane.com/]
 
 Visit <a aria-label="next.js learn" href="https://deviceplane.com/docs">https://deviceplane.com/docs</a> to view the full documentation.
 
-#### Build and install the binary
-
-```
-make build install
-```
-
 ## Support
 
 For bugs, issues, and feature requests please [submit](//github.com/deviceplane/cli/issues/new) a GitHub issue.
