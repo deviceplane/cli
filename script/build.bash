@@ -27,5 +27,6 @@ for OS in ${OS_PLATFORM_ARG[@]}; do
               -mod vendor \
               -ldflags="-s -w -X github.com/deviceplane/cli/cmd/deviceplane/main.version=$CLI_VERSION" \
               -o ${OUTPUT_BIN} ./cmd/deviceplane
+        chmod +x "$OUTPUT_BIN"
     done
 done
