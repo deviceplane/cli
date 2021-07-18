@@ -1,0 +1,82 @@
+trigger:
+  tags:
+    include:
+    - v*
+  branches:
+    include:
+    - master
+  paths:
+    exclude:
+    - README.md
+    - CHANGELOG.md
+
+variables:
+  jobuuid: $(Build.BuildId)$(Agent.Id)
+  build: $(Build.BuildId)
+  ref: $(Build.SourceBranch)
+  commit: $(Build.SourceVersion)
+  branch: $(Build.SourceBranchName)
+  isTaggedCommit: 'no'
+  version:
+  GOROOT: '/usr/local/go1.16'
+  GOPATH: '/tmp/go'
+  GOBIN:  '$(GOPATH)/bin'
+
+jobs:
+- job: TestAndPush
+  pool:
+    vmImage: 'Ubuntu-18.04'
+
+  steps:
+  - script: |
+      set -e
+      VERS=$(echo $(commit) | cut -c1-20)
+      if [[ $(ref) == refs/tags* ]]; then
+        VERS=$(echo $(ref) | sed "s|refs/tags/v||g")
+        echo "##vso[task.setvariable variable=isTaggedCommit]yes"
+      fi
+      echo "##vso[task.setvariable variable=version]$VERS"
+      echo "Version: $VERS"
+    displayName: 'Set git/version variables'
+
+  - script: |
+      set -e
+      mkdir -p '$(GOBIN)'
+      mkdir -p '$(GOPATH)/pkg'
+      echo '##vso[task.prependpath]$(GOBIN)'
+      echo '##vso[task.prependpath]$(GOROOT)/bin'
+    displayName: 'Set up the Go workspace'
+  - task: GoTool@0
+    inputs:
+      version: '1.16'
+      goPath: $(GOPATH)
+      goBin: $(GOBIN)
+    displayName: 'Install Golang'
+
+  - script: |
+      set -e
+      CLI_VERSION="$(version)" script/build.bash
+    displayName: 'Build binaries'
+
+  - task: AzureFileCopy@4
+#    condition: eq(variables.isTaggedCommit, 'yes')
+    inputs:
+      sourcePath: $(Agent.BuildDirectory)/dist/cli
+      azureSubscription: AzureSubscription
+      destination: azureBlob # Options: azureBlob, azureVMs
+      storage: deviceplanedownloads # Storage account
+      resourceGroup: Edgeworx # Required when destination == AzureVMs
+      containerName: downloads # Required when destination == AzureBlob
+      blobPrefix: cli # Optional
+      #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
+      #machineNames: # Optional
+      #vmsAdminUserName: # Required when destination == AzureVMs
+      #vmsAdminPassword: # Required when destination == AzureVMs
+      #targetPath: # Required when destination == AzureVMs
+      #additionalArgumentsForBlobCopy: # Optional
+      #additionalArgumentsForVMCopy: # Optional
+      #enableCopyPrerequisites: false # Optional
+      #copyFilesInParallel: true # Optional
+      #cleanTargetBeforeCopy: false # Optional
+      #skipCACheck: true # Optional
+      #sasTokenTimeOutInMinutes: # Optional

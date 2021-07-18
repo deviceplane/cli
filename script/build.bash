@@ -1,4 +1,5 @@
 #!/bin/bash
+
 set -e
 
 if [ -z "$CLI_VERSION" ]; then
@@ -28,4 +29,3 @@ for OS in ${OS_PLATFORM_ARG[@]}; do
               -o ${OUTPUT_BIN} ./cmd/deviceplane
     done
 done
-
