@@ -56,8 +56,8 @@ jobs:
   - script: |
       set -e
       CLI_VERSION="$(version)" script/build.bash
+      dist/cli/$(version)/linux/amd64/deviceplane --help
     displayName: 'Build binaries'
-
 
   - task: AzureCLI@2
     condition: eq(variables.isTaggedCommit, 'yes')
