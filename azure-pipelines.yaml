@@ -68,5 +68,5 @@ jobs:
       scriptLocation: inlineScript
       inlineScript: |
         set -e
-        az storage blob upload-batch -d downloads/cli -s $(Agent.BuildDirectory)/dist/cli/ --account-name deviceplanedownloads --account-key $(az.storage_account_key)
-        az storage blob upload-batch -d downloads/cli/latest -s $(Agent.BuildDirectory)/dist/cli/$(version)/ --account-name deviceplanedownloads --account-key $(az.storage_account_key)
+        az storage blob upload-batch -d downloads/cli -s ./dist/cli/ --account-name deviceplanedownloads --account-key $(az.storage_account_key)
+        az storage blob upload-batch -d downloads/cli/latest -s ./dist/cli/$(version)/ --account-name deviceplanedownloads --account-key $(az.storage_account_key)
