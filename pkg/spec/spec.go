@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/pkg/hash"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/hash"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 func WithStandardLabels(s models.Service, applicationID, serviceName string) models.Service {

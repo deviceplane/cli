@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/deviceplane/deviceplane/pkg/validator"
+	"github.com/deviceplane/cli/pkg/validator"
 )
 
 func read(r *http.Request, req interface{}) error {

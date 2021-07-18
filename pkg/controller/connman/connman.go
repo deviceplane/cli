@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/deviceplane/deviceplane/pkg/revdial"
+	"github.com/deviceplane/cli/pkg/revdial"
 )
 
 var (

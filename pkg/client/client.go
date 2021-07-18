@@ -13,7 +13,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 	"github.com/function61/holepunch-server/pkg/wsconnadapter"
 	"github.com/gorilla/websocket"
 )

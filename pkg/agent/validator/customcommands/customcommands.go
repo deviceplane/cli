@@ -3,8 +3,8 @@ package customcommands
 import (
 	"errors"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/variables"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/agent/variables"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 var (

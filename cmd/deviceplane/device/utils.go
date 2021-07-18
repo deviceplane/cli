@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/models"
+	"github.com/deviceplane/cli/pkg/utils"
 )
 
 func parseTextFilter(text string) (models.Filter, error) {

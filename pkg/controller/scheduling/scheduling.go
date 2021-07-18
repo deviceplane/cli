@@ -6,8 +6,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/deviceplane/deviceplane/pkg/controller/query"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/controller/query"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 var (

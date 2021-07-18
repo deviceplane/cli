@@ -3,8 +3,8 @@ package websocket
 import (
 	"net/http"
 
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	dphttp "github.com/deviceplane/deviceplane/pkg/http"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	dphttp "github.com/deviceplane/cli/pkg/http"
 	"github.com/gorilla/websocket"
 )
 

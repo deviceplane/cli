@@ -9,7 +9,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/deviceplane/deviceplane/pkg/engine"
+	"github.com/deviceplane/cli/pkg/engine"
 	"github.com/vishvananda/netns"
 )
 

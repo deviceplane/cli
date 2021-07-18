@@ -7,9 +7,9 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/variables"
-	"github.com/deviceplane/deviceplane/pkg/engine"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/agent/variables"
+	"github.com/deviceplane/cli/pkg/engine"
+	"github.com/deviceplane/cli/pkg/utils"
 )
 
 type PullEvent struct {

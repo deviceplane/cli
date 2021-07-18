@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/deviceplane/deviceplane/pkg/controller/store"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/controller/store"
+	"github.com/deviceplane/cli/pkg/models"
 	"github.com/pkg/errors"
 
 	"github.com/segmentio/ksuid"

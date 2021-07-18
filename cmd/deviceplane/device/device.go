@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/cliutils"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/cmd/deviceplane/cliutils"
+	"github.com/deviceplane/cli/pkg/models"
 	"golang.org/x/sync/errgroup"
 
 	kingpin "gopkg.in/alecthomas/kingpin.v2"

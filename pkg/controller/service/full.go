@@ -3,7 +3,7 @@ package service
 import (
 	"context"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 	"github.com/pkg/errors"
 )
 

@@ -3,7 +3,7 @@ package spec
 import (
 	"fmt"
 
-	"github.com/deviceplane/deviceplane/pkg/validation"
+	"github.com/deviceplane/cli/pkg/validation"
 	"gopkg.in/yaml.v2"
 )
 

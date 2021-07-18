@@ -1,6 +1,6 @@
 package utils
 
-import "github.com/deviceplane/deviceplane/pkg/models"
+import "github.com/deviceplane/cli/pkg/models"
 
 // map[DeviceID]map[ApplicationID]map[Service]*State
 func DeviceServiceStatesListToMap(deviceServiceStates []models.DeviceServiceState) (map[string]map[string]map[string]*models.DeviceServiceState, error) {

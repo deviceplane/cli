@@ -8,11 +8,11 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/service/client"
-	"github.com/deviceplane/deviceplane/pkg/codes"
-	"github.com/deviceplane/deviceplane/pkg/controller/authz"
-	"github.com/deviceplane/deviceplane/pkg/models"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/agent/service/client"
+	"github.com/deviceplane/cli/pkg/codes"
+	"github.com/deviceplane/cli/pkg/controller/authz"
+	"github.com/deviceplane/cli/pkg/models"
+	"github.com/deviceplane/cli/pkg/utils"
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
 )

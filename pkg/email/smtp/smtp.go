@@ -8,7 +8,7 @@ import (
 	"net/smtp"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/pkg/email"
+	"github.com/deviceplane/cli/pkg/email"
 	"github.com/pkg/errors"
 )
 

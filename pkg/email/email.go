@@ -129,7 +129,7 @@ const Template = `
 			<tr>
 				<td>
 				<a href=”” style=”cursor:default;”>
-					<img height="42px" src="https://github.com/deviceplane/deviceplane/raw/master/logo/name-white.png" class="banner" />
+					<img height="42px" src="https://github.com/deviceplane/cli/raw/master/logo/name-white.png" class="banner" />
 				</a>
 				</td>
 			</tr>

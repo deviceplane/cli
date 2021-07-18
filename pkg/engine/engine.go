@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 var (

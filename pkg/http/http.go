@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
 	"github.com/pkg/errors"
 )
 

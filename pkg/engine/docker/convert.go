@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/pkg/engine"
-	"github.com/deviceplane/deviceplane/pkg/models"
-	"github.com/deviceplane/deviceplane/pkg/yamltypes"
+	"github.com/deviceplane/cli/pkg/engine"
+	"github.com/deviceplane/cli/pkg/models"
+	"github.com/deviceplane/cli/pkg/yamltypes"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/container"
 	"github.com/docker/docker/api/types/strslice"

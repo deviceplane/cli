@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/cliutils"
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/global"
+	"github.com/deviceplane/cli/cmd/deviceplane/cliutils"
+	"github.com/deviceplane/cli/cmd/deviceplane/global"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
 

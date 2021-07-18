@@ -5,9 +5,9 @@ import (
 	"encoding/base64"
 	"encoding/json"
 
-	"github.com/deviceplane/deviceplane/pkg/controller/store"
-	"github.com/deviceplane/deviceplane/pkg/models"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/controller/store"
+	"github.com/deviceplane/cli/pkg/models"
+	"github.com/deviceplane/cli/pkg/utils"
 	"github.com/pkg/errors"
 )
 

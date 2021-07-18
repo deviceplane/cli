@@ -6,11 +6,11 @@ import (
 	"net/url"
 
 	"github.com/DataDog/datadog-go/statsd"
-	"github.com/deviceplane/deviceplane/pkg/controller/connman"
-	"github.com/deviceplane/deviceplane/pkg/controller/spaserver"
-	"github.com/deviceplane/deviceplane/pkg/controller/store"
-	"github.com/deviceplane/deviceplane/pkg/email"
-	"github.com/deviceplane/deviceplane/pkg/revdial"
+	"github.com/deviceplane/cli/pkg/controller/connman"
+	"github.com/deviceplane/cli/pkg/controller/spaserver"
+	"github.com/deviceplane/cli/pkg/controller/store"
+	"github.com/deviceplane/cli/pkg/email"
+	"github.com/deviceplane/cli/pkg/revdial"
 	"github.com/gorilla/mux"
 	"github.com/gorilla/websocket"
 )

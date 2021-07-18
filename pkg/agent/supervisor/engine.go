@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/engine"
-	canonical_image "github.com/deviceplane/deviceplane/pkg/image"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/engine"
+	canonical_image "github.com/deviceplane/cli/pkg/image"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 const containerCreateTimeout = time.Minute

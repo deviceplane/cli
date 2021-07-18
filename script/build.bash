@@ -25,7 +25,7 @@ for OS in ${OS_PLATFORM_ARG[@]}; do
         echo "Building binary for $OS/$ARCH..."
         GOOS=$OS GOARCH=$ARCH CGO_ENABLED=0 go build \
               -mod vendor \
-              -ldflags="-s -w -X main.version=$CLI_VERSION" \
+              -ldflags="-s -w -X github.com/deviceplane/cli/cmd/deviceplane/main.version=$CLI_VERSION" \
               -o ${OUTPUT_BIN} ./cmd/deviceplane
     done
 done

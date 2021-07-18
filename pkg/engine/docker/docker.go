@@ -8,8 +8,8 @@ import (
 	"io"
 	"strings"
 
-	"github.com/deviceplane/deviceplane/pkg/engine"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/engine"
+	"github.com/deviceplane/cli/pkg/models"
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/filters"
 	"github.com/docker/docker/client"

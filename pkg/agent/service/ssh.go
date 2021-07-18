@@ -11,7 +11,7 @@ import (
 	"unsafe"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/agent/server/conncontext"
+	"github.com/deviceplane/cli/pkg/agent/server/conncontext"
 	"github.com/gliderlabs/ssh"
 	"github.com/kr/pty"
 	"github.com/pkg/errors"

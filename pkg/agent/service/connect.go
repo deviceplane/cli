@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/server/conncontext"
-	"github.com/deviceplane/deviceplane/pkg/codes"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/agent/server/conncontext"
+	"github.com/deviceplane/cli/pkg/codes"
+	"github.com/deviceplane/cli/pkg/utils"
 )
 
 func (s *Service) connectTCP(w http.ResponseWriter, r *http.Request) {

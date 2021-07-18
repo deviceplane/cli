@@ -1,7 +1,7 @@
 package configure
 
 import (
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/global"
+	"github.com/deviceplane/cli/cmd/deviceplane/global"
 )
 
 var (

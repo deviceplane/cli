@@ -1,4 +1,4 @@
-module github.com/deviceplane/deviceplane
+module github.com/deviceplane/cli
 
 go 1.16
 

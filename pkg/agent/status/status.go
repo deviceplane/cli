@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/apex/log"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 type GarbageCollector struct {

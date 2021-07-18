@@ -3,7 +3,7 @@ package processing
 import (
 	"regexp"
 
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/utils"
 )
 
 var nodePrefixRegex = regexp.MustCompile(`(?m)(^|^# HELP |^# TYPE )(node_)`)

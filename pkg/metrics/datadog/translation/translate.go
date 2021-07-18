@@ -3,8 +3,8 @@ package translation
 import (
 	"io"
 
-	"github.com/deviceplane/deviceplane/pkg/metrics/datadog"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/metrics/datadog"
+	"github.com/deviceplane/cli/pkg/models"
 
 	prometheus "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/expfmt"

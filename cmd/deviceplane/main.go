@@ -3,16 +3,20 @@ package main
 import (
 	"os"
 
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/cliutils"
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/configure"
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/device"
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/global"
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/project"
+	"github.com/deviceplane/cli/cmd/deviceplane/cliutils"
+	"github.com/deviceplane/cli/cmd/deviceplane/configure"
+	"github.com/deviceplane/cli/cmd/deviceplane/device"
+	"github.com/deviceplane/cli/cmd/deviceplane/global"
+	"github.com/deviceplane/cli/cmd/deviceplane/project"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
 
 var (
-	app = kingpin.New("deviceplane", "The Deviceplane CLI.").UsageTemplate(cliutils.CustomTemplate).Version("dev")
+	version = "dev"
+)
+
+var (
+	app = kingpin.New("deviceplane", "The Deviceplane CLI.").UsageTemplate(cliutils.CustomTemplate).Version(version)
 
 	config = global.Config{
 		App:             app,

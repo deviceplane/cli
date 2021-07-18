@@ -2,7 +2,7 @@ package info
 
 import (
 	//"github.com/cobaugh/osrelease"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 func getOSRelease() (*models.OSRelease, error) {
@@ -12,11 +12,11 @@ func getOSRelease() (*models.OSRelease, error) {
 	//}
 
 	return &models.OSRelease{
-		PrettyName: "",//osRelease["PRETTY_NAME"],
-		Name:       "",//osRelease["NAME"],
-		VersionID:  "",//osRelease["VERSION_ID"],
-		Version:    "",//osRelease["VERSION"],
-		ID:         "",//osRelease["ID"],
-		IDLike:     "",//osRelease["ID_LIKE"],
+		PrettyName: "", //osRelease["PRETTY_NAME"],
+		Name:       "", //osRelease["NAME"],
+		VersionID:  "", //osRelease["VERSION_ID"],
+		Version:    "", //osRelease["VERSION"],
+		ID:         "", //osRelease["ID"],
+		IDLike:     "", //osRelease["ID_LIKE"],
 	}, nil
 }

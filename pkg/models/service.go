@@ -1,6 +1,6 @@
 package models
 
-import "github.com/deviceplane/deviceplane/pkg/yamltypes"
+import "github.com/deviceplane/cli/pkg/yamltypes"
 
 type Service struct {
 	CapAdd         []string                  `yaml:"cap_add,omitempty"`

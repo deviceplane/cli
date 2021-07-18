@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/client"
-	"github.com/deviceplane/deviceplane/pkg/agent/server/conncontext"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	"github.com/deviceplane/deviceplane/pkg/revdial"
+	"github.com/deviceplane/cli/pkg/agent/client"
+	"github.com/deviceplane/cli/pkg/agent/server/conncontext"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	"github.com/deviceplane/cli/pkg/revdial"
 	"github.com/gorilla/websocket"
 	"github.com/pkg/errors"
 )

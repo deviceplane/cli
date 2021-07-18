@@ -58,25 +58,15 @@ jobs:
       CLI_VERSION="$(version)" script/build.bash
     displayName: 'Build binaries'
 
-  - task: AzureFileCopy@4
-#    condition: eq(variables.isTaggedCommit, 'yes')
+
+  - task: AzureCLI@2
+    condition: eq(variables.isTaggedCommit, 'yes')
+    displayName: Upload binaries to Azure
     inputs:
-      sourcePath: $(Agent.BuildDirectory)/dist/cli
       azureSubscription: AzureSubscription
-      destination: azureBlob # Options: azureBlob, azureVMs
-      storage: deviceplanedownloads # Storage account
-      resourceGroup: Edgeworx # Required when destination == AzureVMs
-      containerName: downloads # Required when destination == AzureBlob
-      blobPrefix: cli # Optional
-      #resourceFilteringMethod: 'machineNames' # Optional. Options: machineNames, tags
-      #machineNames: # Optional
-      #vmsAdminUserName: # Required when destination == AzureVMs
-      #vmsAdminPassword: # Required when destination == AzureVMs
-      #targetPath: # Required when destination == AzureVMs
-      #additionalArgumentsForBlobCopy: # Optional
-      #additionalArgumentsForVMCopy: # Optional
-      #enableCopyPrerequisites: false # Optional
-      #copyFilesInParallel: true # Optional
-      #cleanTargetBeforeCopy: false # Optional
-      #skipCACheck: true # Optional
-      #sasTokenTimeOutInMinutes: # Optional
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        set -e
+        az storage blob upload-batch -d downloads/cli -s $(Agent.BuildDirectory)/dist/cli/ --account-name deviceplanedownloads --account-key $(az.storage_account_key)
+        az storage blob upload-batch -d downloads/cli/latest -s $(Agent.BuildDirectory)/dist/cli/$(version)/ --account-name deviceplanedownloads --account-key $(az.storage_account_key)

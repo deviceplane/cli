@@ -3,8 +3,8 @@ package service
 import (
 	"net/http"
 
-	"github.com/deviceplane/deviceplane/pkg/codes"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/codes"
+	"github.com/deviceplane/cli/pkg/utils"
 	"github.com/gorilla/mux"
 )
 

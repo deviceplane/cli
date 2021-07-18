@@ -5,7 +5,7 @@ import (
 
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	"github.com/deviceplane/deviceplane/pkg/client"
+	"github.com/deviceplane/cli/pkg/client"
 )
 
 type Config struct {

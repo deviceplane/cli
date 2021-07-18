@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 type Users interface {

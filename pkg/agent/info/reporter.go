@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/agent/client"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/agent/client"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 type Reporter struct {

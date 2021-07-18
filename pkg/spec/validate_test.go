@@ -3,7 +3,7 @@ package spec
 import (
 	"testing"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/yaml.v2"
 )

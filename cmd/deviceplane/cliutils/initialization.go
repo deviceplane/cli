@@ -3,8 +3,8 @@ package cliutils
 import (
 	"os"
 
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/global"
-	"github.com/deviceplane/deviceplane/pkg/client"
+	"github.com/deviceplane/cli/cmd/deviceplane/global"
+	"github.com/deviceplane/cli/pkg/client"
 
 	"github.com/olekukonko/tablewriter"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"

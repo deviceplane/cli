@@ -8,15 +8,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/deviceplane/deviceplane/pkg/spec"
+	"github.com/deviceplane/cli/pkg/spec"
 
 	"github.com/apex/log"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/validator"
-	"github.com/deviceplane/deviceplane/pkg/agent/variables"
-	"github.com/deviceplane/deviceplane/pkg/engine"
-	"github.com/deviceplane/deviceplane/pkg/hash"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/agent/validator"
+	"github.com/deviceplane/cli/pkg/agent/variables"
+	"github.com/deviceplane/cli/pkg/engine"
+	"github.com/deviceplane/cli/pkg/hash"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 const (

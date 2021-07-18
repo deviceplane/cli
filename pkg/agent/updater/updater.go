@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/apex/log"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	dphttp "github.com/deviceplane/deviceplane/pkg/http"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	dphttp "github.com/deviceplane/cli/pkg/http"
 )
 
 const (

@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/agent/client"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	"github.com/deviceplane/deviceplane/pkg/metrics/datadog/processing"
-	"github.com/deviceplane/deviceplane/pkg/metrics/datadog/translation"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/agent/client"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	"github.com/deviceplane/cli/pkg/metrics/datadog/processing"
+	"github.com/deviceplane/cli/pkg/metrics/datadog/translation"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 type MetricsPusher struct {

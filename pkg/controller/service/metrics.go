@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/metrics/datadog"
-	"github.com/deviceplane/deviceplane/pkg/metrics/datadog/processing"
-	"github.com/deviceplane/deviceplane/pkg/models"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/metrics/datadog"
+	"github.com/deviceplane/cli/pkg/metrics/datadog/processing"
+	"github.com/deviceplane/cli/pkg/models"
+	"github.com/deviceplane/cli/pkg/utils"
 )
 
 func (s *Service) forwardServiceMetrics(w http.ResponseWriter, r *http.Request) {

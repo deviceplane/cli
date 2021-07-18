@@ -9,10 +9,10 @@ import (
 	"strings"
 
 	"github.com/apex/log"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	dphttp "github.com/deviceplane/deviceplane/pkg/http"
-	"github.com/deviceplane/deviceplane/pkg/models"
-	dpwebsocket "github.com/deviceplane/deviceplane/pkg/websocket"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	dphttp "github.com/deviceplane/cli/pkg/http"
+	"github.com/deviceplane/cli/pkg/models"
+	dpwebsocket "github.com/deviceplane/cli/pkg/websocket"
 	"github.com/function61/holepunch-server/pkg/wsconnadapter"
 )
 

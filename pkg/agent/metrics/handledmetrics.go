@@ -7,10 +7,10 @@ import (
 	"sync"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/agent/netns"
-	"github.com/deviceplane/deviceplane/pkg/agent/supervisor"
-	"github.com/deviceplane/deviceplane/pkg/metrics/datadog/processing"
-	"github.com/deviceplane/deviceplane/pkg/utils"
+	"github.com/deviceplane/cli/pkg/agent/netns"
+	"github.com/deviceplane/cli/pkg/agent/supervisor"
+	"github.com/deviceplane/cli/pkg/metrics/datadog/processing"
+	"github.com/deviceplane/cli/pkg/utils"
 	"github.com/pkg/errors"
 )
 

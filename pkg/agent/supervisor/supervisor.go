@@ -5,11 +5,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/validator"
-	"github.com/deviceplane/deviceplane/pkg/agent/variables"
-	dpcontext "github.com/deviceplane/deviceplane/pkg/context"
-	"github.com/deviceplane/deviceplane/pkg/engine"
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/agent/validator"
+	"github.com/deviceplane/cli/pkg/agent/variables"
+	dpcontext "github.com/deviceplane/cli/pkg/context"
+	"github.com/deviceplane/cli/pkg/engine"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 type Supervisor struct {

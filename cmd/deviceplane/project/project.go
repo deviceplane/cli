@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/deviceplane/deviceplane/cmd/deviceplane/cliutils"
+	"github.com/deviceplane/cli/cmd/deviceplane/cliutils"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
 

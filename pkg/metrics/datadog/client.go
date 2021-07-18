@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/deviceplane/deviceplane/pkg/models"
+	"github.com/deviceplane/cli/pkg/models"
 )
 
 func NewPoint(value float32) [2]interface{} {

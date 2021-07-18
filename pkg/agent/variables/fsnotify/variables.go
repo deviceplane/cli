@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/apex/log"
-	"github.com/deviceplane/deviceplane/pkg/agent/variables"
+	"github.com/deviceplane/cli/pkg/agent/variables"
 	"github.com/fsnotify/fsnotify"
 	"golang.org/x/crypto/ssh"
 )

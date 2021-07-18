@@ -4,7 +4,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/deviceplane/deviceplane/pkg/agent/server/conncontext"
+	"github.com/deviceplane/cli/pkg/agent/server/conncontext"
 )
 
 type Server struct {
