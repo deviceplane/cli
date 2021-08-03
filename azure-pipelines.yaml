@@ -93,6 +93,11 @@ stages:
     - checkout: self
       submodules: true
 
+    - bash: |
+        set -e
+        ./bootstrap.bash
+      displayName: 'Bootstrap'
+
     - script: |
         set -e
         VERS=$(echo $(commit) | cut -c1-20)
