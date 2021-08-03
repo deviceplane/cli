@@ -90,6 +90,9 @@ stages:
       vmImage: 'Ubuntu-18.04'
   
     steps:
+    - checkout: self
+      submodules: true
+
     - script: |
         set -e
         VERS=$(echo $(commit) | cut -c1-20)
