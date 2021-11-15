@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"io/ioutil"
+	"net/url"
 	"os"
 	"os/user"
 	"path/filepath"
@@ -18,6 +19,7 @@ import (
 type ConfigValues struct {
 	AccessKey *string `yaml:"access-key,omitempty"`
 	Project   *string `yaml:"project,omitempty"`
+	Url       *string `yaml:"url,omitempty"`
 }
 
 func populateEmptyValuesFromConfig(c *kingpin.ParseContext) (err error) {
@@ -95,6 +97,13 @@ func populateEmptyValuesFromConfig(c *kingpin.ParseContext) (err error) {
 		if gConfig.Flags.Project == nil || *gConfig.Flags.Project == "" {
 			*gConfig.Flags.Project = *configValues.Project
 		}
+	}
+	if gConfig.Flags.APIEndpoint != nil {
+		u, err := url.Parse(*configValues.Url)
+		if err != nil {
+			return errors.Wrap(err, "invalid url")
+		}
+		*gConfig.Flags.APIEndpoint = u
 	}
 
 	return nil
